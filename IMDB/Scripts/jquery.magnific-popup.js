@@ -451,8 +451,8 @@ MagnificPopup.prototype = {
 	
 	updateSize: function(winHeight) {
 
-		if(mfp.isIOS) {
-			// fixes iOS nav bars https://github.com/dimsemenov/Magnific-Popup/issues/2
+		if (mfp.isIOS) {
+
 			var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
 			var height = window.innerHeight * zoomLevel;
 			mfp.wrap.css('height', height);
